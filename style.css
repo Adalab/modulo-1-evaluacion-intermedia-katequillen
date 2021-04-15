@@ -6,7 +6,30 @@
 }
 
 .head {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+}
+
+.logo {
+  width: 155px;
+  padding: 10px;
+}
+
+a {
+  color: var(--color-menu);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.menu {
+  font-size: 16px;
 }
 
 .main {
+  padding-top: 100px;
+  font-size: 30px;
 }
