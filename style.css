@@ -15,7 +15,7 @@
   position: fixed;
   background-color: #ffffff;
   width: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -28,7 +28,10 @@
     font-size: 16px;
     padding-bottom: 13px;
     width: 150px;
-    justify-content: space-evenly;
+  }
+
+  .item1 {
+    padding-right: 20px;
   }
 
 a {
@@ -49,7 +52,7 @@ a:link {
 
 .main-text {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bolder;
   color: var(--color-text);
   font-family: var(--font-family);
   margin-right: auto;
@@ -65,8 +68,14 @@ a:link {
     justify-content: space-between;
     }
 
+    .logo {
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .menu {
         transform: translate(0, 50%);
+        padding-right: 30px;
     }
 
     .main{
