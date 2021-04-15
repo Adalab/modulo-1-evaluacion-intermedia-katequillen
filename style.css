@@ -1,3 +1,12 @@
 :root {
   font-family: "Rubik", sans-serif;
+  --color-menu: #4a4a4a;
+  --color-background: #3cdbc0;
+  --color-text: #ffffff;
+}
+
+.head {
+}
+
+.main {
 }
