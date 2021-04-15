@@ -1,5 +1,5 @@
-:root {
-  font-family: "Rubik", sans-serif;
+* {
+  --font-family: "Rubik", sans-serif;
   --color-menu: #4a4a4a;
   --color-background: #3cdbc0;
   --color-text: #ffffff;
@@ -10,11 +10,8 @@
   flex-direction: column;
   position: fixed;
   background-color: #ffffff;
-  border-top: 10px;
-  border-color: solid #ffffff;
   width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .logo {
@@ -22,35 +19,57 @@
   padding: 10px;
 }
 
+.menu {
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 13px;
+    width: 150px;
+    justify-content: space-evenly;
+  }
+
 a {
   color: var(--color-menu);
+  font-family: var(--font-family);
 }
 
 a:link {
   text-decoration: none;
 }
 
-.menu {
-  display: flex;
-  font-size: 16px;
-  padding-bottom: 13px;
-  width: 150px;
-  justify-content: space-evenly;
-}
-
 .main {
   display: flex;
-  padding-top: 100px;
   background-color: var(--color-background);
   max-width: 768px;
   height: 100vh;
+  align-items: center;
 }
 
 .main-text {
   font-size: 30px;
+  font-weight: bold;
   color: var(--color-text);
+  font-family: var(--font-family);
   margin-right: auto;
   margin-left: auto;
-  vertical-align: 50%;
-  position: relative;
+  text-align: center;
+  transform: translate (0, 50%);
+}
+
+@media all and (min-width: 768px) {
+    .head {
+    display: flex:;
+    flex-direction: row;
+    }
+
+    .logo {
+        justify-content: left;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .main-text {
+        font-weight: 40px;
+    }
 }
