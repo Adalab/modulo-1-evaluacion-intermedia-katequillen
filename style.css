@@ -30,6 +30,16 @@ a:link {
 }
 
 .main {
+  display: flex;
   padding-top: 100px;
+  background-color: var(--color-background);
+  max-width: 768px;
+  height: 100vh;
+}
+
+.main-text {
   font-size: 30px;
+  color: var(--color-text);
+  margin-right: auto;
+  margin-left: auto;
 }
