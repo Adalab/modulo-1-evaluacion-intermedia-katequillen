@@ -5,6 +5,10 @@
   --color-text: #ffffff;
 }
 
+.container {
+    width: 100%
+}
+
 .head {
   display: flex;
   flex-direction: column;
@@ -39,7 +43,6 @@ a:link {
 .main {
   display: flex;
   background-color: var(--color-background);
-  max-width: 768px;
   height: 100vh;
   align-items: center;
 }
@@ -59,14 +62,15 @@ a:link {
     .head {
     display: flex:;
     flex-direction: row;
-    }
-
-    .logo {
-        justify-content: left;
+    justify-content: space-between;
     }
 
     .menu {
-        justify-content: flex-end;
+        transform: translate(0, 50%);
+    }
+
+    .main{
+        width: 100vw;
     }
 
     .main-text {
